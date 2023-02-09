@@ -1,0 +1,35 @@
+.select{
+    display: flex;
+    justify-content: right;
+    margin-right: 20px; 
+}
+select{
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;   
+  padding: 5px;
+  margin: 10px;
+}
+
+@media screen and (max-width:500px) {
+  .select{
+    justify-content: center;
+     margin-right: 0;
+}
+/* select{
+  font-size: 14px;
+  padding: 5px 0;
+  margin: 10px 0 0 0;
+
+} */
+ 
+}
+@media screen and (max-width:400px) {
+ 
+select{
+  font-size: 12px;
+
+
+}
+ 
+}

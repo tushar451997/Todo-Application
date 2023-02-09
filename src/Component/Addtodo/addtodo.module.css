@@ -1,0 +1,95 @@
+h1{
+    text-align: center;
+    background-color:black;
+    color: white;
+    /* font-weight: 600; */
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+form{
+    width: 350px;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;       gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+form input,label{
+    width: 70%;
+}
+input{
+    height: 40px;
+    font-size: 17px;
+    border: 1px solid silver;
+}
+input:focus{
+    outline: none;
+    border: 2px solid black;
+}
+button{
+    font-size: 20px;
+    padding:10px 15px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: green;
+}
+button:hover{
+    background-color: rgb(2, 76, 2);
+}
+.blackborder{
+    border: 1px solid silver;
+}
+.redborder{
+    border: 2px solid red;
+}
+.textalert{
+    color: red;
+    height: 10px;
+    text-align: left;
+}
+.appenddata{
+display: flex;
+/* width: 10%; */
+justify-content: center;
+align-items: center;
+    
+}
+img{
+    width: 100px;
+}
+
+
+
+@media screen and (max-width:500px) {
+    form{
+        width: 70%;
+    }
+    form input,label{
+        width: 90%;
+    }
+}
+@media screen and (max-width:330px) {
+    
+    form{
+        padding: 10px 0;
+        width: 95%;
+    }
+    form input,label{
+        width: 90%;
+    }
+    h1{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
