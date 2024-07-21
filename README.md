@@ -1,4 +1,4 @@
-# Todo-Application
+# Todo-Application.
 
 Task Management: Users can create new tasks, set due dates.
 I have make todo app by using reactjs in that i have use ﬁrebase realtime database to add,delete,edit and sort todo data.
