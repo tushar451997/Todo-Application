@@ -48,10 +48,10 @@ const handleChange =(event)=>{
 
 }
 
-const handleSubmit =(event)=>{
+const handleSubmit =async(event)=>{
    event.preventDefault();
    if(todotext.todotask.trim()!==""&&todotext.duedate.trim()!==""){
-    Postrequest(todotext)
+    await Postrequest(todotext)
     fetchData()
   settodoText(dataobj)
   setBorderip1(false)
@@ -86,11 +86,11 @@ const handleBlur2 = () =>{
     }
 }
 
-const handleDeleteTodo=(id)=>{
+const handleDeleteTodo=async(id)=>{
     setisLoading(true)
-   Deleterequest(id);
-   getRequest();
-   fetchData();
+  await Deleterequest(id);
+  await getRequest();
+  await fetchData();
 }
 
 const handleEdit =(id)=>{
@@ -103,11 +103,11 @@ const handleEdit =(id)=>{
     setEdit(!edit)
 }
 
-const handleUpdate=(text,id)=>{
+const handleUpdate=async(text,id)=>{
     setisLoading(true)
-  Editrequest(id,text)
-  getRequest();
-   fetchData();
+ await Editrequest(id,text)
+ await getRequest();
+ await fetchData();
 }
 
 const handleSort =(data)=>{
